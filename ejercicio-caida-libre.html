@@ -41,6 +41,8 @@
             border-radius: 5px;
         }
     </style>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
 
@@ -48,33 +50,34 @@
         <h1>Problema Clásico: Caída Libre</h1>
 
         <h2>Enunciado</h2>
-        <p>Se deja caer una pelota desde la azotea de un edificio de altura <b>h = 50 metros</b>. Despreciando la resistencia del aire, ¿cuánto tiempo tarda en llegar al suelo?</p>
-        <p>(Usar la aceleración de la gravedad, <b>g ≈ 9.8 m/s²</b>)</p>
+        <p>Se deja caer una pelota desde la azotea de un edificio de altura $h = 50 \text{ m}$. Despreciando la resistencia del aire, ¿cuánto tiempo tarda en llegar al suelo?</p>
+        <p>(Usar la aceleración de la gravedad, $g \approx 9.8 \text{ m/s}^2$)</p>
 
         <h2>Solución</h2>
         <p>Usamos la ecuación de la cinemática para la posición en movimiento uniformemente acelerado (MUA):</p>
-        <p><code>y(t) = y₀ + v₀t + (1/2)at²</code></p>
         
-        <p>Establecemos nuestro sistema de referencia con el <b>suelo en y=0</b> y la azotea en <b>y₀ = 50 m</b>.</p>
+        $$ y(t) = y_0 + v_0t + \frac{1}{2}at^2 $$
+        
+        <p>Establecemos nuestro sistema de referencia con el suelo en $y=0$ y la azotea en $y_0 = 50 \text{ m}$.</p>
         <ul>
-            <li>Posición inicial (<b>y₀</b>): 50 m</li>
-            <li>Velocidad inicial (<b>v₀</b>): 0 m/s (porque "se deja caer")</li>
-            <li>Aceleración (<b>a</b>): -9.8 m/s² (es la gravedad, <b>-g</b>, que apunta hacia abajo)</li>
-            <li>Posición final (<b>y(t)</b>): 0 m (el suelo)</li>
+            <li>Posición inicial ($y_0$): $50 \text{ m}$</li>
+            <li>Velocidad inicial ($v_0$): $0 \text{ m/s}$ (porque "se deja caer")</li>
+            <li>Aceleración ($a$): $-9.8 \text{ m/s}^2$ (es la gravedad, $-g$, que apunta hacia abajo)</li>
+            <li>Posición final ($y(t)$): $0 \text{ m}$ (el suelo)</li>
         </ul>
         
         <p>Sustituimos en la ecuación:</p>
-        <p><code>0 = 50 + (0)t + (1/2)(-9.8)t²</code></p>
-        <p><code>0 = 50 - 4.9t²</code></p>
+        $$ 0 = 50 + (0)t + \frac{1}{2}(-9.8)t^2 $$
+        $$ 0 = 50 - 4.9t^2 $$
         
-        <p>Despejamos el tiempo <b>t</b>:</p>
-        <p><code>4.9t² = 50</code></p>
-        <p><code>t² = 50 / 4.9</code></p>
-        <p><code>t² ≈ 10.204 s²</code></p>
-        <p><code>t = √10.204</code></p>
+        <p>Despejamos el tiempo $t$:</p>
+        $$ 4.9t^2 = 50 $$
+        $$ t^2 = \frac{50}{4.9} $$
+        $$ t^2 \approx 10.204 \text{ s}^2 $$
+        $$ t = \sqrt{10.204} $$
         
         <div class="solucion">
-            <h3>t ≈ 3.19 segundos</h3>
+            <h3>$t \approx 3.19 \text{ segundos}$</h3>
         </div>
 
         <hr style="margin-top: 30px;">
