@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio: Caída Libre</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto; /* Margen superior e inferior */
+            padding: 25px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #0366d6; /* Un azul estilo GitHub */
+        }
+        h2 {
+            border-bottom: 2px solid #eaecef;
+            padding-bottom: 5px;
+        }
+        /* Estilo para el código o fórmulas */
+        code {
+            background-color: #f6f8fa;
+            padding: 3px 6px;
+            border-radius: 5px;
+            font-family: monospace;
+        }
+        .solucion {
+            background-color: #e6ffed; /* Fondo verde claro para la respuesta */
+            border: 1px solid #b2dba1;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Problema Clásico: Caída Libre</h1>
+
+        <h2>Enunciado</h2>
+        <p>Se deja caer una pelota desde la azotea de un edificio de altura <b>h = 50 metros</b>. Despreciando la resistencia del aire, ¿cuánto tiempo tarda en llegar al suelo?</p>
+        <p>(Usar la aceleración de la gravedad, <b>g ≈ 9.8 m/s²</b>)</p>
+
+        <h2>Solución</h2>
+        <p>Usamos la ecuación de la cinemática para la posición en movimiento uniformemente acelerado (MUA):</p>
+        <p><code>y(t) = y₀ + v₀t + (1/2)at²</code></p>
+        
+        <p>Establecemos nuestro sistema de referencia con el <b>suelo en y=0</b> y la azotea en <b>y₀ = 50 m</b>.</p>
+        <ul>
+            <li>Posición inicial (<b>y₀</b>): 50 m</li>
+            <li>Velocidad inicial (<b>v₀</b>): 0 m/s (porque "se deja caer")</li>
+            <li>Aceleración (<b>a</b>): -9.8 m/s² (es la gravedad, <b>-g</b>, que apunta hacia abajo)</li>
+            <li>Posición final (<b>y(t)</b>): 0 m (el suelo)</li>
+        </ul>
+        
+        <p>Sustituimos en la ecuación:</p>
+        <p><code>0 = 50 + (0)t + (1/2)(-9.8)t²</code></p>
+        <p><code>0 = 50 - 4.9t²</code></p>
+        
+        <p>Despejamos el tiempo <b>t</b>:</p>
+        <p><code>4.9t² = 50</code></p>
+        <p><code>t² = 50 / 4.9</code></p>
+        <p><code>t² ≈ 10.204 s²</code></p>
+        <p><code>t = √10.204</code></p>
+        
+        <div class="solucion">
+            <h3>t ≈ 3.19 segundos</h3>
+        </div>
+
+        <hr style="margin-top: 30px;">
+        <a href="/">Volver al inicio</a>
+    </div>
+
+</body>
+</html>
